@@ -1,0 +1,14 @@
+<div class="card">
+
+    {% if skills %}
+    <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor }
+        </ul>
+    </div>
+    {% endif }
+    
+</div>
