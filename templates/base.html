@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TBD</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+
+<body>
+  <div class="page-wrap">
+
+    <header class="main-header">
+      <h1>SNDMakes</h1>
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+
+    <footer class="main-footer">
+      <p>This project was created during <a href="http://www.snd.org/2016/04/meet-sndmakes-sf/">SNDMakes SF</a> in April 2016 by Alex Duner, John Osborn, Aliya Mood and Kyle Ellis. The code is available at our <a href="https://github.com/duner/sndmakes-sf">GitHub repo</a>.</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</body>
