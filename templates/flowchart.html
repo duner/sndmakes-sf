@@ -1,0 +1,111 @@
+
+<link rel="stylesheet" type="text/css" href="../static/styles/styles.css">
+<style type="text/css">
+	#fc-container {overflow:hidden;width:100%;height:79.2%;position:relative;top:0;left:0;background:#D95847;}
+	.fc-slide {position:absolute;width:50%;height:50%;bottom:25%;z-index:100;}
+	.fc-slide.left {left:-4000px;}
+	.fc-slide.right {right:-4000px;}
+	.fc-slide.bottom {bottom:-4000px;}
+	.fc-slide h2 {text-align:center;}
+	.fc-slide a {color:#fff;}
+	.choicebox {display:inline-block;position:relative;z-index:1000;background:#aaa;}
+	.choicebox p {font-size:1.5em;color:#fff;cursor:pointer;}
+</style>
+<header></header>
+<body>
+	<section id="fc-container">		
+		<div class="home fc-slide" slide="home">
+		    <h2>Growing and nurturing professional relationships one event at a time</h2>
+		    <div class="button">Get Started</div>
+		</div>
+		<div class="fc-slide right" slide="looking_for">
+			<h2>I'm looking to make <a class="choiceopt" box="looking_for" href="#" onclick="return false;">connections</a> with people.</h2>
+		</div>
+		<div class="fc-slide right" slide="skills">
+			<h2>I'm looking to build skills in this <a class="choiceopt" box="skills" href="#" onclick="return false;">area</a>.</h2>
+		</div>
+			<div class="fc-slide right" slide="skills_front_end"></div>
+			<div class="fc-slide right" slide="skills_back_end"></div>
+			<div class="fc-slide right" slide="skills_art_direction"></div>
+		<div class="fc-slide left" slide="networking">
+			<h2>I'm looking to meet up with someone for <a class="choiceopt" box="networking" href="#" onclick="return false;">this goal</a>.</h2>
+		</div>
+			<div class="fc-slide left" slide="have_work"></div>
+				<div class="fc-slide left" slide="have_work_front_end"></div>
+				<div class="fc-slide left" slide="have_work_back_end"></div>
+				<div class="fc-slide left" slide="have_work_art_direction"></div>
+			<div class="fc-slide left" slide="need_work"></div>
+				<div class="fc-slide left" slide="need_work_front_end"></div>
+				<div class="fc-slide left" slide="need_work_back_end"></div>
+				<div class="fc-slide left" slide="need_work_art_direction"></div>
+			<div class="fc-slide left" slide="critique"></div>
+			<div class="fc-slide left" slide="meet_irl"></div>
+	</section>
+
+</body>
+<footer class="main-footer">
+  <p>Made with <3 in San Francisco at <a href="http://www.snd.org/2016/04/meet-sndmakes-sf/">SNDMakes</a> by Alex Duner, John Osborn, Aliya Mood and Kyle Ellis. The code is available at our <a href="https://github.com/duner/sndmakes-sf">GitHub repo</a>.</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.button').on('click', function(){
+			next_slide('home', null);
+		})
+
+		$('.choiceopt').on('click', function(){
+			var pos = $(this).position(), box = $(this).attr('box');
+			$('.fc-slide[slide="' + box + '"]').append('<div class="choicebox" box="'+ box +'"></div>');
+			$('.choicebox').css({
+				left: pos.left,
+				top: pos.top - 80
+			});
+
+			switch(box){
+				case 'looking_for':
+					$('.choicebox').append('<p box="'+box+'">networking</p><p box="'+box+'">skill building</p>');
+					break;
+				case 'networking':
+					$('.choicebox').append('<p box="'+box+'">critique</p><p box="'+box+'">career advice</p><p box="'+box+'">coffee</p>');
+					break;
+				case 'skills':
+					$('.choicebox').append('<p box="'+box+'">front-end development</p><p box="'+box+'">back end development</p><p box="'+box+'">product design</p><p box="'+box+'">editorial design</p>');
+					break;
+			}
+
+			$('.choicebox p').on('click', function(){
+				var sel = $(this).text(), box = $(this).attr('box');
+				$('.fc-slide[slide="'+box+'"] a').text(sel);
+				$('.fc-slide[slide="'+box+'"]').attr('opt', sel);
+				$('.choicebox').remove();
+
+				next_slide(box, sel);
+			})
+
+			
+		})
+
+		function next_slide(box, sel){
+			switch(box){
+				case 'looking_for':
+					if (sel === 'networking'){
+						$('.fc-slide[slide="'+box+'"]').animate({left:'4000px'}, 500, function(){$('.fc-slide[slide="'+box+'"]').remove();});
+						$('.fc-slide[slide="networking"]').animate({left:'25%'}, 500);
+					}
+					else {
+						$('.fc-slide[slide="'+box+'"]').animate({left:'-4000px'}, 500, function(){$('.fc-slide[slide="'+box+'"]').remove();});
+						$('.fc-slide[slide="skills"]').animate({right:'25%'}, 500);
+					}
+					break;
+				case 'home':
+					$('.fc-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home').remove();});
+					$('.fc-slide[slide="looking_for"]').animate({right:'25%'}, 500);
+					break;
+			}
+
+		}
+	})
+
+</script>
