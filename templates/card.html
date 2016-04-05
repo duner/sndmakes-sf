@@ -1,0 +1,20 @@
+<div class="card">
+
+    <div class="info">
+        <div class="img"><img src="{{ src }}" alt=""></div>
+        <h3>{{ name }}</h3>
+        <p class="info-jobtitle">{{ jobtitle }}</p>
+        <p class="info-jobtitle">{{ jobtitle }}</p>
+    </div>
+    {% if skills %}
+    <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor }
+        </ul>
+    </div>
+    {% endif }
+
+</div>
