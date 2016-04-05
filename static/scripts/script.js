@@ -1,3 +1,7 @@
+var flowchart = {
+	selection:'' 
+}
+
 $(document).ready(function(){
 
 	$('.button').on('click', function(){
@@ -29,7 +33,7 @@ $(document).ready(function(){
 			$('.fc-slide[slide="'+box+'"] a').text(sel);
 			$('.fc-slide[slide="'+box+'"]').attr('opt', sel);
 			$('.choicebox').remove();
-
+			flowchart.selection = sel;
 			next_slide(box, sel);
 		})
 
@@ -49,7 +53,7 @@ $(document).ready(function(){
 				}
 				break;
 			case 'home':
-				$('.fc-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home').remove();});
+				$('.home-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home-slide').remove();});
 				$('.fc-slide[slide="looking_for"]').animate({right:'25%'}, 500);
 				break;
 		}
