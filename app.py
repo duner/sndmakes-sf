@@ -31,8 +31,15 @@ def process_data_for_context(person):
     person['skills']['all'] = person['skills']['front_end'] + person['skills']['back_end'] + person['skills']['editorial']
     return person
 
-def filter(person, directory):
-    pass
+def filter(person, directory, type):
+    results = []
+    if type is 'skills':
+        for i in person['skills'].keys():
+            results.extend([p for p in directory if p['skills'][i]])
+    if type is 'networking':
+        for i in person['networking'].keys():
+            results.extend([p for p in directory if p['networking'][i]])
+    return set(results)
 
 
 port = int(os.environ.get('PORT', 5000))
