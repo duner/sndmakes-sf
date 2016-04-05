@@ -6,12 +6,13 @@ body {
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
+    overflow:hidden;
 }
 
 header {
     height: 10%;
     max-height:100px;
-    padding: .5em;
+    padding: .2% .5em;
     background-color: #D95847;
     width: 100%;
 }
@@ -41,17 +42,13 @@ p {
     font-weight: 400;
 }
 
-.page-wrap {
-    height: auto !important;
-    min-height: 100%;
-    margin-bottom: 100px; 
-}
 
 div.home {
     position: absolute;
-    top: 40vh;
+    bottom:25%;
+    right:25%;
     text-align: center;
-    width: 100%;
+    width: 50%;
 }
 
 div.home h2 {
@@ -69,6 +66,7 @@ div.home button {
     font-size: 1em;
     background-color: orange;
     display: inline-block;
+    cursor: pointer;
 }
 
 .cards {
@@ -143,8 +141,9 @@ div.home button {
 }
 
 footer {
-    height: 100px;
-    padding: .5em;
+    height:10%;
+    max-height: 100px;
+    padding: .2% 5em;
     background: orange;
 }
 
@@ -152,3 +151,13 @@ footer p {
     text-align: center;
     font-size: .875em;
 }
+
+#fc-container {overflow:hidden;width:100%;height:79.2%;position:relative;top:0;left:0;background:#D95847;}
+.fc-slide {position:absolute;width:50%;height:50%;bottom:25%;z-index:100;}
+.fc-slide.left {left:-4000px;}
+.fc-slide.right {right:-4000px;}
+.fc-slide.bottom {bottom:-4000px;}
+.fc-slide h2 {text-align:center;}
+.fc-slide a {color:#fff;}
+.choicebox {display:inline-block;position:relative;z-index:1000;background:#aaa;}
+.choicebox p {font-size:1.5em;color:#fff;cursor:pointer;}

@@ -1,8 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="home">
-    <h2>Growing and nurturing professional relationships one event at a time</h2>
-    <div class="button">Get Started</div>
-</div>
+<section id="fc-container">		
+	<div class="home fc-slide" slide="home">
+	    <h2>Growing and nurturing professional relationships one event at a time</h2>
+	    <div class="button">Get Started</div>
+	</div>
+	<div class="fc-slide right" slide="looking_for">
+		<h2>I'm looking to make <a class="choiceopt" box="looking_for" href="#" onclick="return false;">connections</a> with people.</h2>
+	</div>
+	<div class="fc-slide right" slide="skills">
+		<h2>I'm looking to build skills in this <a class="choiceopt" box="skills" href="#" onclick="return false;">area</a>.</h2>
+	</div>
+		<div class="fc-slide right" slide="skills_front_end"></div>
+		<div class="fc-slide right" slide="skills_back_end"></div>
+		<div class="fc-slide right" slide="skills_art_direction"></div>
+	<div class="fc-slide left" slide="networking">
+		<h2>I'm looking to meet up with someone for <a class="choiceopt" box="networking" href="#" onclick="return false;">this goal</a>.</h2>
+	</div>
+</section>
 {% endblock %}
