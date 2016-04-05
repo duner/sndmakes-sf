@@ -11,10 +11,18 @@
 
 <body>
     <header class="main-header">
-      <div class="logo">
-        <img class="icon" src="{{ url_for('static', filename='images/hatchling.png') }}">
+      <div class="brand">
+        <div class="logo">
+          <a href="/"><img class="icon" src="{{ url_for('static', filename='images/Hatchling-new.png') }}"></a>
+        </div>
+        <div><a href="/"><h1>Hatchling</h1></a></div>
       </div>
-      <h1>Hatchling</h1>
+      
+      </div>
+      <div class="nav">
+        <a href="#">Sign in</a>
+        <a href="#">Sign up</a>
+      </div>
     </header>
 
     {% block content %}
@@ -22,7 +30,7 @@
     </div>
     
     <footer class="main-footer">
-      <p>Made with <3 in San Francisco at <a href="http://www.snd.org/2016/04/meet-sndmakes-sf/">SNDMakes</a> by Alex Duner, John Osborn, Aliya Mood and Kyle Ellis. The code is available at our <a href="https://github.com/duner/sndmakes-sf">GitHub repo</a>.</p>
+      <div><p>Made with <3 in San Francisco at <a href="http://www.snd.org/2016/04/meet-sndmakes-sf/">SNDMakes</a> by Team Dogpatch. Code at <a href="https://github.com/duner/sndmakes-sf">GitHub repo</a>.</p></div>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
