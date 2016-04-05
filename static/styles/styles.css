@@ -52,8 +52,18 @@ div.home {
     width: 100%;
 }
 
+div.home h2 {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    font-size: 2.25em;
+}
+div.home button {
+    font-size: 1.75em;
+}
+
 .button {
-    padding: .5em;
+    padding: 1em;
     font-size: 1em;
     background-color: orange;
     display: inline-block;
