@@ -1,12 +1,11 @@
 <div class="card">
-    <div class="img"><img src="{{ person.profile_photo }}" alt=""></div>
     <div class="card-main">
         <div class="card-header">
-            <h2 class="card-name">{{ person.first_name }} {{ person.last_name }}</h3>
-            <h3 class="card-jobtitle">{{ person.occupation }} at {{ person.employer }}</h2>
+            <h2 class="card-name">{{ person.first_name }} {{ person.last_name }}</h2>
+            <h3 class="card-jobtitle">{{ person.occupation }} at {{ person.employer }}</h3>
         </div>
         <div class="card-body">
-            <p class="card-skills"><span>I can help with:</span> {{ person.skills|join(", ") }}</p>
+            <p class="card-skills"><span>I can help with:</span> {{ person.skills.all|join(", ") }}</p>
             <p class="card-asks"><span>Ask me about:</span> {{ person.ask_about }}</p>
             <div class="buttons">
                 {% if person.critique %}<button>Critique</button>{% endif %}
@@ -15,4 +14,5 @@
             </div>
         </div>
     </div>
+    <div class="img"><img src="{{ person.profile_photo }}" alt=""></div>
 </div>
