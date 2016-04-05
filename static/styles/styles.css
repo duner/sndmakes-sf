@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: rgb(247,247,247);
 }
 
 body {
@@ -45,15 +46,25 @@ p {
     margin-bottom: 100px; 
 }
 
+.ducks {
+    border-top: 13em rgb(241,241,241) solid;
+    height: 80vh;
+    width: 100%;
+    background-image: url(/static/images/ducks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 div.home {
     position: absolute;
-    top: 40vh;
+    top: 25vh;
     text-align: center;
     width: 100%;
 }
 
 div.home h2 {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 1em;
     font-size: 2.25em;
