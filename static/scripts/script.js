@@ -33,12 +33,22 @@ $(document).ready(function(){
 			$('.fc-slide[slide="'+box+'"] a').text(sel);
 			$('.fc-slide[slide="'+box+'"]').attr('opt', sel);
 			$('.choicebox').remove();
-			flowchart.selection = sel;
-			next_slide(box, sel);
-		})
 
-		
-	})
+			if (box === 'networking'){
+				goToResults({
+					'type': 'networking',
+					'sel': sel
+				});
+			} else if (box == 'skills') {
+				goToResults({
+					'type': 'skills',
+					'sel': sel
+				});
+			} else {
+				next_slide(box, sel);
+			}
+		});
+	});
 
 	function next_slide(box, sel){
 		switch(box){
@@ -57,6 +67,14 @@ $(document).ready(function(){
 				$('.fc-slide[slide="looking_for"]').animate({right:'25%'}, 500);
 				break;
 		}
-
 	}
+
+	function goToResults(opts) {
+		window.location = '/directory?filter=' + opts.type + '&sel=' + encodeURIComponent(opts.sel);
+		// window.location.search = 
+		// var url = '?filter=' + opts.type + '&sel=' + opts.sel;
+		// var full_url = '/directory?' + encodeURI(url);
+		// window.location.pathname = full_url;
+	}
+
 })
