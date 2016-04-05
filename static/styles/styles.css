@@ -43,10 +43,14 @@ p {
     font-weight: 400;
 }
 
+.home-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 
 .ducks {
-    border-top: 13em rgb(241,241,241) solid;
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background-image: url(/static/images/ducks.jpg);
     background-repeat: no-repeat;
@@ -56,12 +60,8 @@ p {
 
 div.home {
     position: absolute;
-<<<<<<< HEAD
     bottom:25%;
     right:25%;
-=======
-    top: 25vh;
->>>>>>> 7f5eeecbfb0b1415929e0c5547113d758e160392
     text-align: center;
     width: 50%;
 }
