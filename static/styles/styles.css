@@ -7,12 +7,25 @@ body {
 header {
     height: 10%;
     max-height:100px;
+    padding: .5em;
     background-color: #D95847;
     width: 100%;
 }
 
+.logo {
+    display: inline-block;
+    height: 3em;
+}
+.icon {
+    height: 100%;
+}
+
 h1 {
+    display: inline-block;
     font-weight: 700;
+    margin: 0;
+    position: relative;
+    top: -.25em;
 }
 
 h2 {
@@ -23,18 +36,79 @@ p {
     font-weight: 400;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
 .card {
-    width: 50%;
+    flex-grow: 1;
+    flex-basis: 50%;
     padding: 1em;
     margin: 1em;
-    background-color: papayawhip;
+    border: 3px solid black;
+    display: inline-block;
+}
+.card .img { float: left; }
+.card img {
+    width: 100px;
+    margin-right: 1em;
+}
+
+.card .card-main {
+    float: left;
+}
+
+.card-header {
+    display: inline-block;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    margin-bottom: .5em;
+}
+.card h2,
+.card h3  {
+    margin-top: 0;
+    margin-bottom: 0;
     display: inline-block;
 }
 
+.card h2 {
+    margin-right: .25em;
+    color: #D95847;
+}
 .card h3 {
-    margin-top: 0;
+    font-weight: 500;
+}
+
+.card p {
+    margin-top: .125em;
+    margin-bottom: .125em;
 }
 
 .card-body span {
     font-weight: 500;
+}
+
+.card .buttons {
+    display: block;
+    margin-top: .5em;
+}
+
+.card buttons button {
+    display: inline-block;
+}
+
+.card:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+footer p {
+    text-align: center;
+}
 }
