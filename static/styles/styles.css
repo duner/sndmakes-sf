@@ -5,7 +5,8 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 10%;
+    max-height:100px;
     background-color: #D95847;
     width: 100%;
 }
