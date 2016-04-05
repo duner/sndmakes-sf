@@ -115,41 +115,98 @@
 			}
 		},
 		{
-			"first_name": "",
-			"last_name": "",
+			"first_name": "Rick",
+			"last_name": "Grimes",
 			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
-			"employer": "",
-			"occupation": "",
+			"employer": "Atlanta Police",
+			"occupation": "Cop",
 			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			"skills": {
 				"front_end": [],
-				"back_end": [],
+				"back_end": [true],
 				"editorial": [],
 				"product":[]
 			},
 			"networking": {
-				"critique":,
-				"career_advice":,
-				"coffee":
+				"critique":false,
+				"career_advice":true,
+				"coffee":true
 			}
 		},
 		{
-			"first_name": "",
-			"last_name": "",
+			"first_name": "Morgan",
+			"last_name": "Jones",
 			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
-			"employer": "",
-			"occupation": "",
+			"employer": "Self-Employed",
+			"occupation": "Zen Ninja",
 			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			"skills": {
-				"front_end": [],
+				"front_end": [true],
 				"back_end": [],
+				"editorial": [],
+				"product":[true]
+			},
+			"networking": {
+				"critique":false,
+				"career_advice":false,
+				"coffee":true
+			}
+		},
+		{
+			"first_name": "Maggie",
+			"last_name": "Green",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Green Farm",
+			"occupation": "Badass",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [true],
+				"back_end": [true],
 				"editorial": [],
 				"product":[]
 			},
 			"networking": {
-				"critique":,
-				"career_advice":,
-				"coffee":
+				"critique":true,
+				"career_advice":false,
+				"coffee":false
+			}
+		},
+		{
+			"first_name": "Jon",
+			"last_name": "Snow",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Night's Watch",
+			"occupation": "Watch Commander",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [],
+				"back_end": [],
+				"editorial": [true],
+				"product":[]
+			},
+			"networking": {
+				"critique":true,
+				"career_advice":true,
+				"coffee":true
+			}
+		},
+		{
+			"first_name": "Daenerys",
+			"last_name": "Targaryen",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Self-Employed",
+			"occupation": "Future Queen of Westeros",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [true],
+				"back_end": [true],
+				"editorial": [true],
+				"product":[true]
+			},
+			"networking": {
+				"critique":true,
+				"career_advice":true,
+				"coffee":true
 			}
 		}
 	]
