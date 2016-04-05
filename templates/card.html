@@ -1,20 +1,17 @@
 <div class="card">
-
-    <div class="info">
-        <div class="img"><img src="{{ src }}" alt=""></div>
-        <h3>{{ name }}</h3>
-        <p class="info-jobtitle">{{ jobtitle }}</p>
-        <p class="info-jobtitle">{{ jobtitle }}</p>
+    <div class="img"><img src="{{ person.profile_img }}" alt=""></div>
+    <div class="card-header">
+        <h3 class="card-name">{{ person.first_name }} {{ person.last_name }}</h3>
+        <h2 class="card-jobtitle">{{ person.jobtitle }}</h2>
     </div>
-    {% if skills %}
-    <div class="skills">
-        <h3>Skills</h3>
-        <ul>
-        {% for skill in skills %}
-            <li>{{ skill }}</li>
-        {% endfor }
-        </ul>
+    <div class="card-body">
+        <p class="card-asks"><span>Ask me about:</span> {{ person.skills|join(", ") }}</p>
+        <p class="card-skills"><span>I can help with:</span> {{ person.helps|join(", ") }}</p>
+        <div class="buttons">
+            {% if person.critique %}<button>Critique</button>{% endif %}
+            {% if person.meet %}<button>Coffee</button>{% endif %}
+            {% if person.coffee %}<button>Career Advice</button>{% endif %}
+        </div>
     </div>
-    {% endif }
 
 </div>

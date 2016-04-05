@@ -1,0 +1,36 @@
+{
+	"people": [
+	{
+		"first_name": "John",
+		"last_name": "Osborn",
+		"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+		"employer": "Self-Employed",
+		"occupation": "Front-End Developer",
+		"ask_about": "Planning a wedding.",
+		"skills": {
+			"front_end": ["javascript", "d3"],
+			"back_end": ["python", "wordpress"],
+			"art_direction": []
+		},
+		"critique": true,
+		"meet_irl": true,
+		"coffee": false
+	},
+	{
+		"first_name": "Alex",
+		"last_name": "Duner",
+		"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+		"employer": "Knight Lab",
+		"occupation": "Developer",
+		"ask_about": "idk programming I guess.",
+		"skills": {
+			"front_end": ["javascript", "d3", "leaflet", "Sass", "Grunt"],
+			"back_end": ["python", "Django"],
+			"art_direction": []
+		},
+		"critique": false,
+		"meet_irl": true,
+		"coffee": true
+	}
+	]
+}
