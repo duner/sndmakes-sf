@@ -7,20 +7,56 @@ body {
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
-    overflow:hidden;
 }
 
 header {
     height: 10%;
     max-height:100px;
-    padding: .2% .5em;
+    padding: .2% 0;
+    position: relative;
     background-color: #D95847;
     width: 100%;
 }
 
+header .brand {
+    display:inline-block;
+}
+
+header .brand>div:last-of-type {
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 4.3rem;
+}
+
+header .nav {
+    right:2%;
+    height:100%;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+header .nav a {
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-right: .5rem;
+    vertical-align: sub;
+}
+
+header .nav a:hover {
+    text-decoration: underline;
+
+}
+
+
 .logo {
     display: inline-block;
-    height: 3em;
+    height: 4rem;
+
 }
 
 .icon {
@@ -32,7 +68,9 @@ h1 {
     font-weight: 700;
     margin: 0;
     position: relative;
-    top: -.25em;
+    color:#fff;
+    top: -10%;
+    text-transform: lowercase;
 }
 
 h2 {
@@ -82,6 +120,7 @@ div.home button {
     background-color: orange;
     display: inline-block;
     cursor: pointer;
+    color:#fff;
 }
 
 .cards {
@@ -156,18 +195,25 @@ div.home button {
 }
 
 footer {
-    height:10%;
+    height:5%;
     max-height: 100px;
-    padding: .2% 5em;
-    background: orange;
+    padding: .2% 2%;
+    width:96%;
+    background: #D95847;
 }
 
 footer p {
     text-align: center;
-    font-size: .875em;
+    font-size: .6rem;
+    color:#fff;
 }
 
-#fc-container {overflow:hidden;width:100%;height:79.2%;position:relative;top:0;left:0;background:#D95847;}
+footer a {
+    color:#fff;
+    text-decoration: underline;
+}
+
+#fc-container {overflow:hidden;width:100%;height:84.2%;position:relative;top:0;left:0;background:#D95847;}
 .fc-slide {position:absolute;width:50%;height:50%;bottom:25%;z-index:100;}
 .fc-slide.left {left:-4000px;}
 .fc-slide.right {right:-4000px;}
@@ -175,4 +221,5 @@ footer p {
 .fc-slide h2 {text-align:center;}
 .fc-slide a {color:#fff;}
 .choicebox {display:inline-block;position:relative;z-index:1000;background:#aaa;}
-.choicebox p {font-size:1.5em;color:#fff;cursor:pointer;}
+.choicebox p {font-size:1.5em;color:#fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
+.choicebox p:hover {background:#666;}

@@ -12,8 +12,8 @@ $(document).ready(function(){
 		var pos = $(this).position(), box = $(this).attr('box');
 		$('.fc-slide[slide="' + box + '"]').append('<div class="choicebox" box="'+ box +'"></div>');
 		$('.choicebox').css({
-			left: pos.left,
-			top: pos.top - 80
+			left: pos.left - 20,
+			top: pos.top - 110
 		});
 
 		switch(box){
