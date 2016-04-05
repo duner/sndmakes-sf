@@ -10,7 +10,7 @@
 		"skills": {
 			"front_end": ["javascript", "d3"],
 			"back_end": ["python", "wordpress"],
-			"art_direction": []
+			"editorial": []
 		},
 		"critique": true,
 		"meet_irl": true,
@@ -26,7 +26,7 @@
 		"skills": {
 			"front_end": ["javascript", "d3", "leaflet", "Sass", "Grunt"],
 			"back_end": ["python", "Django"],
-			"art_direction": []
+			"editorial": ["reporting"]
 		},
 		"critique": false,
 		"meet_irl": true,

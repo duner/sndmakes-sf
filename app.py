@@ -31,9 +31,8 @@ def directory():
 
 
 def process_data_for_context(person):
+    person['skills']['all'] = person['skills']['front_end'] + person['skills']['back_end'] + person['skills']['editorial']
     return person
-
-
 
 port = int(os.environ.get('PORT', 5000))
 if __name__ == '__main__':

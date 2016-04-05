@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto';
     margin: 0;
@@ -14,6 +18,7 @@ header {
     display: inline-block;
     height: 3em;
 }
+
 .icon {
     height: 100%;
 }
@@ -34,27 +39,45 @@ p {
     font-weight: 400;
 }
 
+.page-wrap {
+    height: auto !important;
+    min-height: 100%;
+    margin-bottom: 100px; 
+}
+
+div.home {
+    position: absolute;
+    top: 40vh;
+    text-align: center;
+    width: 100%;
+}
+
+.button {
+    padding: .5em;
+    font-size: 1em;
+    background-color: orange;
+    display: inline-block;
+}
+
 .cards {
-    display: flex;
-    flex-direction: row;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .card {
-    flex-grow: 1;
-    flex-basis: 50%;
     padding: 1em;
-    margin: 1em;
-    border: 3px solid black;
-    display: inline-block;
+    margin-top: 1em;
+    border: 3px solid black
 }
-.card .img { float: left; }
+
 .card img {
     width: 100px;
     margin-right: 1em;
 }
 
 .card .card-main {
-    float: left;
+    width: calc(100% - 1em - 100px);
+    float: right;
 }
 
 .card-header {
@@ -75,6 +98,7 @@ p {
     margin-right: .25em;
     color: #D95847;
 }
+
 .card h3 {
     font-weight: 500;
 }
@@ -106,7 +130,13 @@ p {
     height: 0;
 }
 
+footer {
+    height: 100px;
+    padding: .5em;
+    background: orange;
+}
+
 footer p {
     text-align: center;
-}
+    font-size: .875em;
 }
