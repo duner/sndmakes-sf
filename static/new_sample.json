@@ -185,7 +185,7 @@
 				"product":[]
 			},
 			"networking": {
-				"critique":true,
+				"critique":false,
 				"career_advice":true,
 				"coffee":true
 			}
@@ -205,7 +205,7 @@
 			},
 			"networking": {
 				"critique":true,
-				"career_advice":true,
+				"career_advice":false,
 				"coffee":true
 			}
 		}

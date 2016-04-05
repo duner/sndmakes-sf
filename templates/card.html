@@ -8,9 +8,8 @@
             <p class="card-skills"><span>I can help with:</span> {{ person.skills.all|join(", ") }}</p>
             <p class="card-asks"><span>Ask me about:</span> {{ person.ask_about }}</p>
             <div class="buttons">
-                {% if person.critique %}<button>Critique</button>{% endif %}
-                {% if person.meet_irl %}<button>Coffee</button>{% endif %}
-                {% if person.coffee %}<button>Career Advice</button>{% endif %}
+                <button>Let's Meetup</button>
+                <button>Email Me</button>
             </div>
         </div>
     </div>

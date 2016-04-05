@@ -23,23 +23,47 @@ def directory():
     with open('static/new_sample.json') as datafile:
         data = json.load(datafile)
         people = [process_data_for_context(person) for person in data['people']]
+
+        # Filtering
+        filtered = False
+        filter_noun = False
+        filter_verb = False
+
+        filter_type = request.args.get('filter')
+        filter_params = request.args.get('sel')
+        filter_full_param = request.args.get('fullsel')
+
+        if filter_type is not None:
+            filtered = True
+
+            if filter_type == 'networking':
+                filter_verb = 'network with'
+            if filter_type == 'skills':
+                filter_verb = 'learn about'
+
+            filter_noun = filter_full_param if (filter_full_param is not None) else filter_params
+
+            people = filter(people, filter_type, filter_params)
+
         return render_template('directory.html', **{
-            'people': people
+            'people': people,
+            'filtered': filtered,
+            'filter_verb': filter_verb,
+            'filter_noun': filter_noun
         })
 
 def process_data_for_context(person):
     person['skills']['all'] = person['skills']['front_end'] + person['skills']['back_end'] + person['skills']['editorial']
     return person
 
-def filter(person, directory, type):
+def filter(directory, filter_type, filter_param):
+    print filter_type, filter_param
     results = []
-    if type is 'skills':
-        for i in person['skills'].keys():
-            results.extend([p for p in directory if p['skills'][i]])
-    if type is 'networking':
-        for i in person['networking'].keys():
-            results.extend([p for p in directory if p['networking'][i]])
-    return set(results)
+    if filter_type == 'skills':
+        results = [p for p in directory if p['skills'][filter_param]]
+    if filter_type == 'networking':
+        results = [p for p in directory if p['networking'][filter_param]]
+    return results
 
 
 port = int(os.environ.get('PORT', 5000))

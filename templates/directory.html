@@ -2,10 +2,28 @@
 
 {% block content %}
 
+{% if filtered %}
+<h3>Meet your flock!</h3>
+<h4>These are the people who can help you {{ filter_verb }} {{ filter_noun }}</h4>
+{% else %}
+<h3>Meet your flock!</h3>
+{% endif %}
+
 <div class="cards">
 {% for person in people %}
     {% include 'card.html' %}
 {% endfor %}
 </div>
+
+{% if filtered %}
+<div class="full-directory button" id="full-directory-button">Meet everyone at your event</div>
+{% endif %}
+
+<script>
+    var button = document.getElementById('full-directory-button');
+    button.addEventListener("click", function(){
+        window.location = '/directory';
+    });
+</script>
 
 {% endblock %}

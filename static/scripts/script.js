@@ -70,11 +70,17 @@ $(document).ready(function(){
 	}
 
 	function goToResults(opts) {
-		window.location = '/directory?filter=' + opts.type + '&sel=' + encodeURIComponent(opts.sel);
-		// window.location.search = 
-		// var url = '?filter=' + opts.type + '&sel=' + opts.sel;
-		// var full_url = '/directory?' + encodeURI(url);
-		// window.location.pathname = full_url;
+		var sel = '';
+		switch (opts.sel) {
+			case 'front end development': sel = 'front_end'; break;
+			case 'back end development': sel = 'back_end'; break;
+			case 'product design': sel = 'product'; break;
+			case 'editorial design': sel = 'editorial'; break;
+			case 'coffee': sel = 'coffee'; break;
+			case 'career advice': sel = 'career_advice'; break;
+			case 'critique': sel = 'critique'; break;
+		}
+		window.location = '/directory?filter=' + opts.type + '&sel=' + sel + '&fullsel=' + encodeURIComponent(opts.sel);
 	}
 
 })
