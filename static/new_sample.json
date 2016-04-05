@@ -1,36 +1,156 @@
 {
 	"people": [
-	{
-		"first_name": "John",
-		"last_name": "Osborn",
-		"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
-		"employer": "Self-Employed",
-		"occupation": "Front-End Developer",
-		"ask_about": "Planning a wedding.",
-		"skills": {
-			"front_end": ["javascript", "d3"],
-			"back_end": ["python", "wordpress"],
-			"editorial": []
+		{
+			"first_name": "John",
+			"last_name": "Osborn",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Self-Employed",
+			"occupation": "Front-End Developer",
+			"ask_about": "Planning a wedding.",
+			"skills": {
+				"front_end": ["javascript", "d3"],
+				"back_end": ["python", "wordpress"],
+				"editorial": [],
+				"product": []
+			},
+			"networking": {
+				"critique": true,
+				"career_advice": true,
+				"coffee": false
+			}
 		},
-		"critique": true,
-		"meet_irl": true,
-		"coffee": false
-	},
-	{
-		"first_name": "Alex",
-		"last_name": "Duner",
-		"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
-		"employer": "Knight Lab",
-		"occupation": "Developer",
-		"ask_about": "idk programming I guess.",
-		"skills": {
-			"front_end": ["javascript", "d3", "leaflet", "Sass", "Grunt"],
-			"back_end": ["python", "Django"],
-			"editorial": ["reporting"]
+		{
+			"first_name": "Alex",
+			"last_name": "Duner",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Knight Lab",
+			"occupation": "Developer",
+			"ask_about": "idk programming I guess.",
+			"skills": {
+				"front_end": ["javascript", "d3", "leaflet", "Sass", "Grunt"],
+				"back_end": ["python", "Django"],
+				"editorial": [],
+				"product":[]
+			},
+			"networking": {
+				"critique": false,
+				"career_advice": true,
+				"coffee": true
+			}
 		},
-		"critique": false,
-		"meet_irl": true,
-		"coffee": true
-	}
+		{
+			"first_name": "Aliya",
+			"last_name": "Mood",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Gannett",
+			"occupation": "Print and Digital Designer for The Arizona Republic and Gannett Design Studio Phoenix",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [],
+				"back_end": [],
+				"editorial": [true],
+				"product":[]
+			},
+			"networking": {
+				"critique": true,
+				"career_advice": true,
+				"coffee": true
+			}
+		},
+		{
+			"first_name": "Kyle",
+			"last_name": "Ellis",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Society for News Design",
+			"occupation": "Product",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [],
+				"back_end": [],
+				"editorial": [true],
+				"product":[true]
+			},
+			"networking": {
+				"critique": true,
+				"career_advice": true,
+				"coffee": true
+			}
+		},
+		{
+			"first_name": "Rick",
+			"last_name": "Anderson",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Code for America",
+			"occupation": "Front-End Developer",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [],
+				"back_end": [],
+				"editorial": [],
+				"product":[]
+			},
+			"networking": {
+				"critique":false,
+				"career_advice":true,
+				"coffee":true
+			}
+		},
+		{
+			"first_name": "Sansa",
+			"last_name": "Stark",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Winterfell",
+			"occupation": "Queen",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [true],
+				"back_end": [],
+				"editorial": [],
+				"product":[true]
+			},
+			"networking": {
+				"critique":false,
+				"career_advice":false,
+				"coffee":false
+			}
+		},
+		{
+			"first_name": "",
+			"last_name": "",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "",
+			"occupation": "",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [],
+				"back_end": [],
+				"editorial": [],
+				"product":[]
+			},
+			"networking": {
+				"critique":,
+				"career_advice":,
+				"coffee":
+			}
+		},
+		{
+			"first_name": "",
+			"last_name": "",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "",
+			"occupation": "",
+			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"skills": {
+				"front_end": [],
+				"back_end": [],
+				"editorial": [],
+				"product":[]
+			},
+			"networking": {
+				"critique":,
+				"career_advice":,
+				"coffee":
+			}
+		}
 	]
 }
