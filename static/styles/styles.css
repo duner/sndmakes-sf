@@ -336,6 +336,11 @@ a.choiceopt {
 .progressbar>div>div>div {height: 100%;
     width: 0;background:#ccc;}
 
+.progressbar-text {
+    top: 2px;
+    position: relative;
+}
+
 .circle {
     width: 100px;
     height: 100px;
