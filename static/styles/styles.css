@@ -30,7 +30,7 @@ header .name {
 
 header .nav {
     right:2%;
-    height:65%;
+    height:90%;
     position: absolute;
     top: 75%;
     transform: translateY(-50%);
