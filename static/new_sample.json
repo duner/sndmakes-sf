@@ -48,7 +48,7 @@
 			"skills": {
 				"front_end": [],
 				"back_end": [],
-				"editorial": [true],
+				"editorial": ["News Design"],
 				"product":[]
 			},
 			"networking": {
@@ -62,7 +62,7 @@
 			"last_name": "Ellis",
 			"profile_photo": "https://pbs.twimg.com/profile_images/706608357067493376/yDE62C7Z_400x400.jpg",
 			"employer": "Society for News Design",
-			"occupation": "Product",
+			"occupation": "Director of Strategic Programs",
 			"ask_about": "Walking the red carpet at the Academy of Country Music Awards",
 			"skills": {
 				"front_end": ["HTML", "CSS"],
