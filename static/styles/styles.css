@@ -10,23 +10,22 @@ body {
 }
 
 header {
-    height: 10%;
-    max-height:100px;
-    padding: .2% 0;
+    max-height: 100px;
+    padding: 0.25em 0.5em;
     position: relative;
     background-color: #D95847;
     width: 100%;
 }
 
-header .brand {
-    display:inline-block;
+header .brand > div { display: inline-block; }
+header .logo { 
+    height: 3.5em; 
+    margin-top: .25em;
 }
-
-header .brand>div:last-of-type {
-    display: inline-block;
-    position: absolute;
-    top: 15%;
-    left: 4.3rem;
+header .logo img { height: 100%; }
+header .name {
+    top: -.75em;
+    position: relative;
 }
 
 header .nav {
@@ -50,17 +49,6 @@ header .nav a {
 header .nav a:hover {
     text-decoration: underline;
 
-}
-
-
-.logo {
-    display: inline-block;
-    height: 4rem;
-
-}
-
-.icon {
-    height: 100%;
 }
 
 h1 {
@@ -88,6 +76,7 @@ p {
 }
 
 .ducks {
+    border-top: 13em solid rgb(241,241,241);
     height: 100%;
     width: 100%;
     background-image: url(/static/images/ducks.jpg);
@@ -195,10 +184,9 @@ div.home button {
 }
 
 footer {
-    height:5%;
-    max-height: 100px;
-    padding: .2% 2%;
-    width:96%;
+    height: 40px;
+    padding: 0.25em 0.25em;
+    width: 100%;
     background: #D95847;
 }
 
@@ -208,7 +196,7 @@ footer p {
     color:#fff;
 }
 
-footer a {
+footer a {g
     color:#fff;
     text-decoration: underline;
 }
@@ -223,3 +211,19 @@ footer a {
 .choicebox {display:inline-block;position:relative;z-index:1000;background:#aaa;}
 .choicebox p {font-size:1.5em;color:#fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
 .choicebox p:hover {background:#666;}
+
+a.choiceopt:after {
+    display: inline-block;
+    content: '\25BC';
+    font-size: .5em;
+    position: relative;
+    top: -.125em;
+    margin-left: .25em;
+    margin-right: .5em;
+}
+
+a.choiceopt,
+.choicebox p {
+    padding-left: .35em;
+    padding-right: .35em;
+}
