@@ -86,6 +86,10 @@ p {
     background-position: center center;
 }
 
+.ducks .button {
+    font-weight: 700;
+}
+
 div.home {
     position: absolute;
     bottom: 35%;
