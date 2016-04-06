@@ -76,7 +76,7 @@ p {
 }
 
 .ducks {
-    border-top: 13em solid rgb(241,241,241);
+    border-top: 14em solid rgb(241,241,241);
     height: 100%;
     width: 100%;
     background-image: url(/static/images/ducks.jpg);
@@ -194,6 +194,8 @@ footer p {
     text-align: center;
     font-size: .6rem;
     color:#fff;
+    top: .5em;
+    position: relative;
 }
 
 footer a {g
@@ -201,15 +203,15 @@ footer a {g
     text-decoration: underline;
 }
 
-#fc-container {overflow:hidden;width:100%;height:84.2%;position:relative;top:0;left:0;background:#D95847;}
+#fc-container {overflow:hidden;width:100%;height:84.2%;position:relative;top:0;left:0;}
 .fc-slide {position:absolute;width:50%;height:50%;bottom:25%;z-index:100;}
 .fc-slide.left {left:-4000px;}
 .fc-slide.right {right:-4000px;}
 .fc-slide.bottom {bottom:-4000px;}
 .fc-slide h2 {text-align:center;}
-.fc-slide a {color:#fff;}
-.choicebox {display:inline-block;position:relative;z-index:1000;background:#aaa;}
-.choicebox p {font-size:1.5em;color:#fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
+.fc-slide a {color:#D95847;}
+.choicebox {display:inline-block; position:relative; z-index:1000; background: orange; color: #fff;}
+.choicebox p {font-size:1.5em;color: #fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
 .choicebox p:hover {background:#666;}
 
 a.choiceopt:after {
@@ -219,11 +221,15 @@ a.choiceopt:after {
     position: relative;
     top: -.125em;
     margin-left: .25em;
-    margin-right: .5em;
+    margin-right: .125em;
 }
 
-a.choiceopt,
+a.choiceopt {
+    padding-left: .15em;
+    padding-right: .15em;
+}
+
 .choicebox p {
-    padding-left: .35em;
-    padding-right: .35em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
