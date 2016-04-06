@@ -30,7 +30,7 @@ $(document).ready(function(){
 				$('.choicebox').append('<p box="'+box+'">critique</p><p box="'+box+'">career advice</p><p box="'+box+'">coffee</p>');
 				break;
 			case 'skills':
-				$('.choicebox').append('<p box="'+box+'">front-end development</p><p box="'+box+'">back end development</p><p box="'+box+'">product design</p><p box="'+box+'">editorial design</p>');
+				$('.choicebox').append('<p box="'+box+'">front end development</p><p box="'+box+'">back end development</p><p box="'+box+'">product design</p><p box="'+box+'">editorial design</p>');
 				break;
 		}
 
