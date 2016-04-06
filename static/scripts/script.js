@@ -76,6 +76,8 @@ $(document).ready(function(){
 			case 'info1':
 				$('.fc-slide[slide="info1"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info1"]').remove();});
 				$('.fc-slide[slide="info2"]').animate({right:'10%'}, 500);
+				$('.moveme').animate({width:'50%'}, 500);
+				$('.progressbar p').text('50% completed');
 				break;
 			case 'info2':
 				$('.fc-slide[slide="info2"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info2"]').remove();});
