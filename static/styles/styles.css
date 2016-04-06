@@ -76,7 +76,7 @@ p {
 }
 
 .ducks {
-    border-top: 12em solid rgb(241,241,241);
+    border-top: 10em solid rgb(241,241,241);
     height: 100%;
     width: 100%;
     background-image: url(/static/images/ducks.jpg);
