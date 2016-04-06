@@ -61,20 +61,20 @@ $(document).ready(function(){
 			case 'looking_for':
 				if (sel === 'networking'){
 					$('.fc-slide[slide="'+box+'"]').animate({left:'-4000px'}, 500, function(){$('.fc-slide[slide="'+box+'"]').remove();});
-					$('.fc-slide[slide="networking"]').animate({left:'25%'}, 500);
+					$('.fc-slide[slide="networking"]').animate({left:'10%'}, 500);
 				}
 				else {
 					$('.fc-slide[slide="'+box+'"]').animate({left:'-4000px'}, 500, function(){$('.fc-slide[slide="'+box+'"]').remove();});
-					$('.fc-slide[slide="skills"]').animate({right:'25%'}, 500);
+					$('.fc-slide[slide="skills"]').animate({right:'10%'}, 500);
 				}
 				break;
 			case 'home':
 				$('.home-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home-slide').remove();});
-				$('.fc-slide[slide="info1"]').animate({right:'25%'}, 500);
+				$('.fc-slide[slide="info1"]').animate({right:'10%'}, 500);
 				break;
 			case 'info1':
 				$('.fc-slide[slide="info1"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info1"]').remove();});
-				$('.fc-slide[slide="looking_for"]').animate({right:'25%'}, 500);
+				$('.fc-slide[slide="looking_for"]').animate({right:'10%'}, 500);
 				$('#fc-container').css('background', '#D95847');
 				break;
 
