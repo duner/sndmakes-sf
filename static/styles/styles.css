@@ -127,6 +127,7 @@ div.home button {
 .card img {
     width: 100px;
     margin-right: 1em;
+    border-radius: 50%;
 }
 
 .card .card-main {
@@ -211,7 +212,7 @@ footer a {g
 .fc-slide.right {right:-4000px;}
 .fc-slide.bottom {bottom:-4000px;}
 .fc-slide h2 {text-align:center;}
-.fc-slide a {color:#fff;}
+.fc-slide a {color:#D95847;}
 .choicebox {display:inline-block; position:relative; z-index:1000; background: orange; color: #fff;}
 .choicebox p {font-size:1.5em;color: #fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
 .choicebox p:hover {background:#666;}
