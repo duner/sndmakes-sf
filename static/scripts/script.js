@@ -72,7 +72,7 @@ $(document).ready(function(){
 				$('.home-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home-slide').remove();});
 				$('.fc-slide[slide="info1"]').animate({right:'10%'}, 500);
 				$('.progressbar').animate({right:'10%'}, 500);
-				$('#fc-container').animate({height:74.2%}, 100);
+				$('#fc-container').animate({height:'74.2%'}, 100);
 				break;
 			case 'info1':
 				$('.fc-slide[slide="info1"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info1"]').remove();});
@@ -82,7 +82,7 @@ $(document).ready(function(){
 				$('.fc-slide[slide="info2"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info2"]').remove();});
 				$('.progressbar').animate({right:'4000px'}, 500, function(){$('.progressbar').remove();});
 				$('.fc-slide[slide="looking_for"]').animate({right:'10%'}, 500);
-				$('#fc-container').animate({height:84.2%}, 100);
+				$('#fc-container').animate({height:'84.2%'}, 100);
 				break;
 
 		}
