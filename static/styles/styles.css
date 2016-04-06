@@ -244,3 +244,8 @@ a.choiceopt {
     padding-left: 1em;
     padding-right: 1em;
 }
+
+.profile h2 {
+    text-transform:uppercase;
+    font-size:2em;
+}
