@@ -253,7 +253,9 @@ a.choiceopt {
 }
 
 .progressbar {
-    height:5%;
-    width:100%;
-    background:#aaa;
+    height: 5%;
+    width: 100%;
+    background: #aaa;
+    right: -4000px;
+    position: absolute;
 }
