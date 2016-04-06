@@ -63,7 +63,6 @@ h1 {
 
 h2 {
     font-weight: 500;
-    font-size: 2.5rem;
 }
 
 p {
@@ -205,6 +204,9 @@ footer a {g
     text-decoration: underline;
 }
 
+.fc-slide h2 {
+    font-size: 2rem;
+}
 
 #fc-container {overflow:hidden;width:100%;height:84.2%;position:relative;top:0;left:0;}
 .fc-slide {position:absolute;width:80%;height:50%;bottom:25%;z-index:100;}
