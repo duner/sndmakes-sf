@@ -271,7 +271,7 @@ footer a {
     text-align: center;
     font-size: 1em;
     background-color: orange;
-    padding: .5em .75em;
+    padding: 1em .75em;
     font-size: .875em;
     font-weight: 800;
 }
@@ -336,7 +336,8 @@ a.choiceopt {
 .progressbar>div>div>div {height: 100%;
     width: 0;background:#ccc;}
 
-.circle {width: 100px;
+.circle {
+    width: 100px;
     height: 100px;
     background: #aaa;
     border:1px solid #444;
