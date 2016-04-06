@@ -77,25 +77,29 @@ $(document).ready(function(){
 			case 'info1':
 				$('.fc-slide[slide="info1"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info1"]').remove();});
 				$('.fc-slide[slide="info2"]').animate({right:'10%'}, 500);
-				$('#fc-container').css('background', '#D95847');
 				break;
 			case 'info2':
 				$('.fc-slide[slide="info2"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info2"]').remove();});
 				$('.progressbar').animate({right:'4000px'}, 500, function(){$('.progressbar').remove();});
 				$('.fc-slide[slide="looking_for"]').animate({right:'10%'}, 500);
 				$('#fc-container').animate({height:84.2%}, 100);
-
 				break;
 
 		}
 	}
 
 	function goToResults(opts) {
-		window.location = '/directory?filter=' + opts.type + '&sel=' + encodeURIComponent(opts.sel);
-		// window.location.search = 
-		// var url = '?filter=' + opts.type + '&sel=' + opts.sel;
-		// var full_url = '/directory?' + encodeURI(url);
-		// window.location.pathname = full_url;
+		var sel = '';
+ 		switch (opts.sel) {
+ 			case 'front end development': sel = 'front_end'; break;
+ 			case 'back end development': sel = 'back_end'; break;
+ 			case 'product design': sel = 'product'; break;
+ 			case 'editorial design': sel = 'editorial'; break;
+ 			case 'coffee': sel = 'coffee'; break;
+ 			case 'career advice': sel = 'career_advice'; break;
+ 			case 'critique': sel = 'critique'; break;
+ 		}
+ 		window.location = '/directory?filter=' + opts.type + '&sel=' + sel + '&fullsel=' + encodeURIComponent(opts.sel);
 	}
 
 })
