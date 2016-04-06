@@ -3,7 +3,7 @@
 		{
 			"first_name": "John",
 			"last_name": "Osborn",
-			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"profile_photo": "https://pbs.twimg.com/profile_images/697123484405596160/_vRy8OX4.png",
 			"employer": "Self-Employed",
 			"occupation": "Front-End Developer",
 			"ask_about": "Planning a wedding.",
@@ -22,7 +22,7 @@
 		{
 			"first_name": "Alex",
 			"last_name": "Duner",
-			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"profile_photo": "https://pbs.twimg.com/profile_images/700404424863322112/hhmnqjA9.jpg",
 			"employer": "Knight Lab",
 			"occupation": "Developer",
 			"ask_about": "idk programming I guess.",
@@ -65,10 +65,10 @@
 			"occupation": "Product",
 			"ask_about": "Walking the red carpet at the Academy of Country Music Awards",
 			"skills": {
-				"front_end": [],
+				"front_end": ["HTML", "CSS"],
 				"back_end": [],
-				"editorial": [true],
-				"product":[true]
+				"editorial": ["Interactive Storytelling"],
+				"product":["News",]
 			},
 			"networking": {
 				"critique": true,
@@ -118,7 +118,7 @@
 			"first_name": "Taylor",
 			"last_name": "Swift",
 			"profile_photo": "https://pbs.twimg.com/profile_images/505200807503867904/osJXmYRl.jpeg",
-			"employer": "Self-employeed",
+			"employer": "Self-employed",
 			"occupation": "Pop star",
 			"ask_about": "My cats Meredith Grey and Olivia Benson",
 			"skills": {
