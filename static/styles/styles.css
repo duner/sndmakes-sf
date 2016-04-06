@@ -139,6 +139,13 @@ div.home button {
     font-weight: 400;
 }
 
+.directory-header strong,
+.directory-header span {
+    font-weight: 700;
+    color: orange;
+    display: inline-block;
+}
+
 .cards {
     max-width: 900px;
     margin: 0 auto;
