@@ -20,6 +20,25 @@
 			}
 		},
 		{
+			"first_name": "John",
+			"last_name": "Osborn",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Self-Employed",
+			"occupation": "Front-End Developer",
+			"ask_about": "Planning a wedding.",
+			"skills": {
+				"front_end": ["javascript", "d3"],
+				"back_end": ["python", "wordpress"],
+				"editorial": [],
+				"product": []
+			},
+			"networking": {
+				"critique": true,
+				"career_advice": true,
+				"coffee": false
+			}
+		},
+		{
 			"first_name": "Alex",
 			"last_name": "Duner",
 			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
