@@ -8,6 +8,12 @@ $(document).ready(function(){
 		next_slide('home', null);
 	})
 
+	$('.small_button').on('click', function(){
+		var box = $(this).attr('box');
+		next_slide(box, null);
+
+	})
+
 	$('.choiceopt').on('click', function(){
 		var pos = $(this).position(), box = $(this).attr('box');
 		$('.fc-slide[slide="' + box + '"]').append('<div class="choicebox" box="'+ box +'"></div>');
@@ -54,7 +60,7 @@ $(document).ready(function(){
 		switch(box){
 			case 'looking_for':
 				if (sel === 'networking'){
-					$('.fc-slide[slide="'+box+'"]').animate({left:'4000px'}, 500, function(){$('.fc-slide[slide="'+box+'"]').remove();});
+					$('.fc-slide[slide="'+box+'"]').animate({left:'-4000px'}, 500, function(){$('.fc-slide[slide="'+box+'"]').remove();});
 					$('.fc-slide[slide="networking"]').animate({left:'25%'}, 500);
 				}
 				else {
@@ -64,23 +70,23 @@ $(document).ready(function(){
 				break;
 			case 'home':
 				$('.home-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home-slide').remove();});
-				$('.fc-slide[slide="looking_for"]').animate({right:'25%'}, 500);
+				$('.fc-slide[slide="info1"]').animate({right:'25%'}, 500);
 				break;
+			case 'info1':
+				$('.fc-slide[slide="info1"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info1"]').remove();});
+				$('.fc-slide[slide="looking_for"]').animate({right:'25%'}, 500);
+				$('#fc-container').css('background', '#D95847');
+				break;
+
 		}
 	}
 
 	function goToResults(opts) {
-		var sel = '';
-		switch (opts.sel) {
-			case 'front end development': sel = 'front_end'; break;
-			case 'back end development': sel = 'back_end'; break;
-			case 'product design': sel = 'product'; break;
-			case 'editorial design': sel = 'editorial'; break;
-			case 'coffee': sel = 'coffee'; break;
-			case 'career advice': sel = 'career_advice'; break;
-			case 'critique': sel = 'critique'; break;
-		}
-		window.location = '/directory?filter=' + opts.type + '&sel=' + sel + '&fullsel=' + encodeURIComponent(opts.sel);
+		window.location = '/directory?filter=' + opts.type + '&sel=' + encodeURIComponent(opts.sel);
+		// window.location.search = 
+		// var url = '?filter=' + opts.type + '&sel=' + opts.sel;
+		// var full_url = '/directory?' + encodeURI(url);
+		// window.location.pathname = full_url;
 	}
 
 })
