@@ -123,7 +123,7 @@
 			"ask_about": "My cats Meredith Grey and Olivia Benson",
 			"skills": {
 				"front_end": [],
-				"back_end": [true],
+				"back_end": [],
 				"editorial": [],
 				"product":[]
 			},
