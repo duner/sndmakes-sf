@@ -71,9 +71,15 @@ $(document).ready(function(){
 			case 'home':
 				$('.home-slide[slide="home"]').animate({right:'4000px'}, 500, function(){$('.home-slide').remove();});
 				$('.fc-slide[slide="info1"]').animate({right:'10%'}, 500);
+				$('.progressbar').animate({right:'0%'}, 500);
 				break;
 			case 'info1':
 				$('.fc-slide[slide="info1"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info1"]').remove();});
+				$('.fc-slide[slide="info2"]').animate({right:'10%'}, 500);
+				break;
+			case 'info2':
+				$('.fc-slide[slide="info2"]').animate({right:'4000px'}, 500, function(){$('.fc-slide[slide="info2"]').remove();});
+				$('.progressbar').animate({right:'4000px'}, 500, function(){$('.progressbar').remove();});
 				$('.fc-slide[slide="looking_for"]').animate({right:'10%'}, 500);
 				break;
 

@@ -20,6 +20,25 @@
 			}
 		},
 		{
+			"first_name": "John",
+			"last_name": "Osborn",
+			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"employer": "Self-Employed",
+			"occupation": "Front-End Developer",
+			"ask_about": "Planning a wedding.",
+			"skills": {
+				"front_end": ["javascript", "d3"],
+				"back_end": ["python", "wordpress"],
+				"editorial": [],
+				"product": []
+			},
+			"networking": {
+				"critique": true,
+				"career_advice": true,
+				"coffee": false
+			}
+		},
+		{
 			"first_name": "Alex",
 			"last_name": "Duner",
 			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
@@ -41,7 +60,7 @@
 		{
 			"first_name": "Aliya",
 			"last_name": "Mood",
-			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"profile_photo": "https://pbs.twimg.com/profile_images/1397698113/247024_10150202848320776_504555775_7462585_4571028_n_400x400.jpg",
 			"employer": "Gannett",
 			"occupation": "Print and Digital Designer for The Arizona Republic and Gannett Design Studio Phoenix",
 			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -60,7 +79,7 @@
 		{
 			"first_name": "Kyle",
 			"last_name": "Ellis",
-			"profile_photo": "https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350",
+			"profile_photo": "https://pbs.twimg.com/profile_images/706608357067493376/yDE62C7Z_400x400.jpg",
 			"employer": "Society for News Design",
 			"occupation": "Product",
 			"ask_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="progressbar right"></div>
 <section id="fc-container">		
 	<div class="home-slide" slide="home">
 		<div class="ducks">
@@ -11,14 +12,17 @@
 		</div>
 	</div>
 	<div class="fc-slide right profile" slide="info1">
-		<h2 style="text-transform:uppercase;font-size:2em;">We're glad you're here! Tell us about yourself.</h2>
+		<h2>We're glad you're here! Tell us about yourself.</h2>
 		<div>
 			<p>What's your name?</p>
 			<input type="text">
 		</div>
 		<div class="small_button" box="info1">NEXT</div>
 	</div>
-	<div class="fc-slide right" slide="info2"></div>
+	<div class="fc-slide right profile" slide="info2">
+		
+		<div class="small_button" box="info2">NEXT</div>
+	</div>
 	<div class="fc-slide right" slide="looking_for">
 		<h2>I'm looking to make <a class="choiceopt" box="looking_for" href="#" onclick="return false;">connections</a> with people.</h2>
 	</div>

@@ -30,7 +30,7 @@ header .name {
 
 header .nav {
     right:2%;
-    height:65%;
+    height:90%;
     position: absolute;
     top: 75%;
     transform: translateY(-50%);
@@ -63,6 +63,7 @@ h1 {
 
 h2 {
     font-weight: 500;
+    font-size: 2.5rem;
 }
 
 p {
@@ -233,14 +234,11 @@ footer p {
     position: relative;
 }
 
-footer a {g
+footer a {
     color:#fff;
     text-decoration: underline;
 }
 
-.fc-slide h2 {
-    font-size: 2rem;
-}
 
 #fc-container {overflow:hidden;width:100%;height:84.2%;position:relative;top:0;left:0;}
 .fc-slide {position:absolute;width:80%;height:50%;bottom:25%;z-index:100;}
@@ -250,7 +248,7 @@ footer a {g
 .fc-slide h2 {text-align:center;}
 .fc-slide a {color:#D95847;}
 .choicebox {display:inline-block; position:relative; z-index:1000; background: orange; color: #fff;}
-.choicebox p {font-size:1.5em;color: #fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
+.choicebox p {font-size:2rem;color: #fff;cursor:pointer;padding:10px;text-align:center;margin: 0;border-bottom: 1px solid #666;}
 .choicebox p:hover {background:#666;}
 
 .small_button {background: #444;color: #fff;font-size: .8rem;display: block;padding: .3rem 1rem;margin: 1rem auto;width: 32px;cursor:pointer;}
@@ -281,7 +279,16 @@ a.choiceopt {
     padding-right: 1em;
 }
 
+
 .profile h2 {
     text-transform:uppercase;
     font-size:2em;
+}
+
+.progressbar {
+    height: 5%;
+    width: 100%;
+    background: #aaa;
+    right: -4000px;
+    position: absolute;
 }
