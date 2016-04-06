@@ -198,8 +198,11 @@ div.home button {
     margin-top: .5em;
 }
 
-.card buttons button {
+.card .button {
     display: inline-block;
+    padding: .25em .375em;
+    font-size: .875em;
+    font-weight: 800;
 }
 
 .card:after {
