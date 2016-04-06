@@ -343,11 +343,16 @@ a.choiceopt {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    margin:10% 0;    
+    margin:10% 0;   
+    margin-top: 0; 
 }
 
-.circle p {text-align: center;
-    margin: 38% 0;}
+.circle p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 40px;
+}
 
 .fc-slide[slide="info2"] {bottom:40%;}
 .fc-slide[slide="info2"]>div:first-of-type {width: 50%;
